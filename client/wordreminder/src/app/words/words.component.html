@@ -1,0 +1,17 @@
+<div>
+  <form class="container" (ngSubmit)="onSubmit()">
+    <input type="text" id="name" name="name" [(ngModel)]="name" />
+    <input type="email" id="email" name="email" [(ngModel)]="email" />
+    <button type="submit">submit</button>
+  </form>
+  <div *ngIf="isSubmitted">
+    <p>{{ name }}</p>
+    <p>{{ email }}</p>
+  </div>
+  <h2>Toplam Kelime Sayısı : {{words.length}}</h2>
+  <div class="wordList">
+    <span *ngFor="let w of words; let i = index">
+      {{ w.word }} ---- {{ w.meaningOfTheWord }} <br /><br />
+    </span>
+  </div>
+</div>
