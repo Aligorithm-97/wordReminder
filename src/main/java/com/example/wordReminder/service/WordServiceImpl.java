@@ -55,6 +55,7 @@ public class WordServiceImpl implements WordService {
         for (Words words : wordsAll) {
             wordStrings.add(words.getWord()+" = "+words.getMeaningOfTheWord()+"<br/>");
         }
+
         message.setText(wordStrings.toString().replace("["," ").replace("]"," "));
         javaMailSender.send(message);
     }
