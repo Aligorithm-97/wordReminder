@@ -53,7 +53,7 @@ public class WordServiceImpl implements WordService {
             wordsAll.add(words);
         }
         for (Words words : wordsAll) {
-            wordStrings.add(words.getWord()+" = "+words.getMeaningOfTheWord()+"<br/>");
+            wordStrings.add(words.getWord()+" = "+words.getMeaningOfTheWord()+"\n");
         }
 
         message.setText(wordStrings.toString().replace("["," ").replace("]"," "));

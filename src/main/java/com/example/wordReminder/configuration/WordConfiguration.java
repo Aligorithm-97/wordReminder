@@ -17,4 +17,9 @@ public class WordConfiguration {
         wordService.remindWordsThroughEmail();
         System.out.println("Words Sent!");
     }
+//    @Scheduled(fixedDelay = 10_000)
+//    public void scheduledTask2(){
+//        wordService.remindWordsThroughEmail();
+//        System.out.println("Words Sent!");
+//    }
 }
