@@ -1,8 +1,9 @@
 <div>
   <form class="container" (ngSubmit)="onSubmit()">
+    <span>ß - ä</span>
     <input type="text" id="name" name="name" [(ngModel)]="name" />
     <input type="email" id="email" name="email" [(ngModel)]="email" />
-    <button type="submit">submit</button>
+    <button type="submit">Save</button>
   </form>
   <div *ngIf="isSubmitted">
     <p>{{ name }}</p>

@@ -10,6 +10,13 @@ button{
     color: white;
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: aqua;
+        border: none;
+        padding: 20px;
+        color: black;
+    }
 }
 .container{
     display: flex;
